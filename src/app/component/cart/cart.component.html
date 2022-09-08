@@ -1,0 +1,62 @@
+
+<nav class="navbar">
+    <div class="container-fluid">
+      <span class="navbar-brand mb-0 h1">Cart Items</span>
+      <div clss="clearcart">
+        <button class="btn btn-danger" (click)="clearCartItems()">Clear Cart</button>
+      </div>
+    </div>
+    
+    
+  </nav>
+  <ng-container *ngIf="true">
+    <div class="container">
+        <div class="card-table">
+            <div class="cart-product">
+             <table class="table table-responsive">
+                 <thead>
+                    <tr>
+                        <th>Book ID</th>
+                        <th>Category</th>
+                        <th>coverfileName</th>
+                        <th>Title</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Total</th>
+                        <th>Action</th>
+                    </tr>
+                 </thead>
+                        <tr *ngFor="let item of products;">
+                            <td>{{item.book.bookId}}</td>
+                            <td>{{item.book.category}}</td>
+                            <td><img src="https://bookcart.azurewebsites.net/upload/{{item.book.coverFileName}}" class="bookImg" alt=""></td>
+                            <td>{{item.book.title}}</td>
+                            <td>{{item.book.price}}</td>
+                            <td>{{item.quantity}}</td>
+                            <td>{{item.book.price}}</td>
+                            
+                            <td>
+                                <button (click)="removeItem(item.book.bookId)" mat-button color="accent">Delete</button>
+                            </td>
+                        </tr>
+             </table>       
+         </div>
+        </div>
+    </div>
+  </ng-container>
+  <ng-container *ngIf="false">
+    <div class="container">
+      <div class="card">
+        <h5 class=" Card-title">My cart</h5>
+       </div>
+        <div class="center">
+          <h4>Your cart is Empty</h4>  
+          <h5>Add items </h5>
+          <button title="Delete" type="button" mat-flat-button color="primary"><i class="fas fa-trash-alt"></i></button>
+    </div>
+    
+  </div>
+  </ng-container>
+  
+  
+

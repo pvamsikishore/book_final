@@ -1,0 +1,18 @@
+<mat-toolbar color="primary">
+    <mat-toolbar-row class="toolbar-row">
+        <div class="logo-column" routerLink="/home">
+            <button mat-button>
+                <mat-icon>book</mat-icon> Book Cart
+            </button>
+        </div>
+        <div class="searchbar-column">
+            <input matInput type="search" placeholder="Search" aria-label="Search">
+        </div>
+        <div class="action-column">
+            <mat-icon matBadge="{{itemCount}}" matBadgeColor="warn" routerLink="/cart">shopping_cart</mat-icon>
+            <button mat-button routerLink="/login">
+                Login
+            </button>
+        </div>
+    </mat-toolbar-row>
+</mat-toolbar>

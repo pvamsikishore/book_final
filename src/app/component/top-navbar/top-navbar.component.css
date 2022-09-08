@@ -1,0 +1,11 @@
+.toolbar-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.searchbar-column > input {
+    width: 35rem;
+    background-color: #FFF;
+    color: #000;
+    font-weight: 400;
+}

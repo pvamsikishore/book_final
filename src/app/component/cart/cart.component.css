@@ -1,0 +1,27 @@
+.card{
+    height: 60vh;
+    margin:25px;
+    padding:25px;
+}
+.center{
+    position: absolute;
+    top:24%;
+    left: 50%;
+    transform:translate(-50%,50%);
+    text-align: center;
+}
+h4,h5{
+font-weight: 400;
+}
+.bookImg{
+    width: 150px;
+    height: 150px;
+}
+.navbar{
+    background-color:#e36077;
+    color: white;
+}
+.navbar-brand{
+    color: white;
+}
+

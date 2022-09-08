@@ -1,0 +1,15 @@
+<div class ="container shadow-lg">
+    <div class="product row">
+        <ng-container *ngFor="let item of productList">
+            <div class="card col-sm-3 shadow-lg">
+                <img src='https://bookcart.azurewebsites.net/upload/{{item.coverFileName}}' alt="">
+               <h5 style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;max-width: 100ch;">{{item.title}}</h5>
+                <p style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;max-width: 100ch;">{{item.category}}</p>
+                <p><strong>Price:</strong> ${{item.price}}</p>
+                <button class="btn btn-primary"(click)="addtocart(item)">Add to cart</button>
+            </div>
+        </ng-container>
+
+    </div>
+</div>
+  
