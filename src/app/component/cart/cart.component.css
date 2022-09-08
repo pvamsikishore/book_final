@@ -24,4 +24,7 @@ font-weight: 400;
 .navbar-brand{
     color: white;
 }
+mat-icon{
+    font-size: 20 px;
+}
 
